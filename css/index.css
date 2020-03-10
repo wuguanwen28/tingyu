@@ -1,0 +1,315 @@
+html,body,.weather{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.img-auto{
+	width: 100%;
+	display: block;
+}
+
+.clearfix{
+	overflow: hidden;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.weather-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/bg2.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.weather-box{
+    height: 100%;
+    width: 100%;
+}
+
+.phone{
+	width: 100%;
+	height: 24px;
+}
+
+.nav{
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.serach{
+	width: 3rem;
+	height: 0.34rem;
+	margin: 0px auto;
+	background-color: rgba(255,255,255,0.1);
+	border-radius:0.17rem;
+	position: relative;	
+}
+
+.search-text{
+	width: 80%;
+	margin: 0px 5%;
+	padding-right: 10%;
+	height: 100%;
+	color: #fff;
+	font-size: 0.15rem;
+}
+
+.search-text::-webkit-input-placeholder{
+	color: #dfdfdf;
+}
+
+.search-icon{
+	position: absolute;
+	width: 0.2rem;
+	height: 0.2rem;
+	display: block;
+	top: 0px;
+	bottom: 0px;
+	right: 15px;
+	margin: auto;
+	background: url(../img/serach.png) no-repeat center center;
+	background-size: cover;
+}
+
+.now-box{
+	height: calc(100% - 0.54rem - 24px);
+	width: 100%;
+	overflow: hidden;
+}
+
+.middle{
+	width: 100%;
+	height: 2.3rem;
+	padding-top:0.2rem;
+}
+
+.middle>div{
+	text-align: center;
+	color: #fff;
+}
+
+.now-title{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.2rem;
+	letter-spacing: 1px;
+}
+
+.now-city{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.16rem;
+}
+
+.now-temperature{
+	height: 0.8rem;
+	font-size: 0.6rem;
+	line-height: 1rem;
+	position: relative;
+}
+
+.now-temperature>span{
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+}
+
+.now-weather{
+	height: 0.3rem;
+	font-size: 0.16rem;
+	line-height: 0.3rem;
+}
+
+.wind-box{
+  width: 2.8rem;
+  height: .4rem;
+  margin-top: .4rem;
+  margin: 0.1rem auto 0;
+}
+
+.wind-list>div{
+  float: left;
+  width: 33.3333%;
+  height: .4rem;
+  position: relative;
+  font-size: .13rem;
+}
+
+.text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line{
+  position: absolute;
+  height: .22rem;
+  width: 1px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+
+.bottom{
+	width: 100%;
+	height: calc(100% - 2.7rem);
+	padding-top: 0.2rem;
+}
+
+.change{
+	width: 200px;
+	height: 44px;
+	border-radius: 22px;
+	font-size: 20px;
+	color: #fff;
+	margin: 0px auto;
+	position: relative;
+	background-image: linear-gradient(to right, #48425C, #80418E);
+}
+
+.change>div{
+	width: 100px;
+	height: 34px;
+	position: absolute;
+	border-radius: 17px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	line-height: 34px;
+	text-align: center;
+}
+
+.change>.active{
+	background-color: #8B4B64;
+}
+
+.change>.time{
+	left: 5px;
+}
+
+.change>.daily{
+	right: 5px;
+}
+
+.content-box{
+	width: 80%;
+	height: calc(100% - 44px - 0.2rem);
+	margin: 0.1rem 10%;
+	overflow-x: auto;
+	overflow-y:hidden ;
+}
+
+.content{
+	height: 100%;
+	position:relative ;
+}
+
+.content>ul{
+	width: 12rem;
+	height: 100%;
+}
+
+.hourList{
+	/*display: none;*/
+}
+
+.content>.dailyList{
+	width: 4.5rem;
+	display: none;
+}
+
+.content>ul>li{
+	width: calc(3rem / 6);
+	height: 100%;
+	float: left;
+	color: #fff;
+	position: relative;
+}
+
+.content>ul>li>div{
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	font-size: 0.14rem;
+	line-height: 30px;
+	margin-bottom: 0.1rem;
+}
+
+.content li>div:first-child{
+	height: 0.2rem;
+	line-height: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+
+.content>.dailyList>li>div{
+	margin-bottom: 0px;
+	height: 0.2rem;
+}
+
+.dailyList>li>div:nth-child(3){
+	margin: 0.1rem 0;
+}
+
+.dailyList>li>div:nth-child(4){
+	height: 0.3rem;
+}
+
+.dailyList>li>div:last-child{
+	height: 0.3rem;
+}
+
+
+.content li>div:last-child{
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+.content .icon{
+	width: 30px;
+	margin: 0 auto;
+}
+
+.canvas{
+	background-color: rgba(255,255,255,0.2);
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+}
+
+.dailyCanvas{
+	display: none;
+}
+
+
+

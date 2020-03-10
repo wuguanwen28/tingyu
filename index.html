@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>听雨天气</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="weather">
+			<div class="weather-bg"></div>
+			<div class="weather-box">
+
+				<div class="phone"></div>
+
+				<!--搜索框-->
+				<div class="nav">
+					<div class="serach">
+						<input class="search-text fl" type="text" placeholder="搜索城市天气">
+						<span class="search-icon fl"></span>
+					</div>
+				</div>
+				<div class="now-box">
+
+					<!--中间内容-->
+					<div class="middle">
+						<div class="now-title">上一场春雨只有我</div>
+						<div class="now-city"></div>
+						<div class="now-temperature"></div>
+						<div class="now-weather">
+							<span>小雨</span>
+							<span>&nbsp;&nbsp;</span>
+							<span>22°~34°</span>
+						</div>
+
+						<!-- 风向、可见度、湿度 -->
+						<div class="wind-box">
+							<div class="wind-list clearfix">
+								<div>
+									<div class="text windDirection">
+										<div></div>
+										<div></div>
+									</div>
+									<i class="line"></i>
+								</div>
+								<div>
+									<div class="text visibility">
+										<div></div>
+										<div>可见度</div>
+									</div>
+									<i class="line"></i>
+								</div>
+								<div>
+									<div class="text humidity">
+										<div></div>
+										<div>湿度</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!--底部内容-->
+					<div class="bottom">
+
+						<div class="change">
+							<div class="time active">Time</div>
+							<div class="daily">Daily</div>
+						</div>
+
+						<div class="content-box">
+							<div class="content">
+								<ul class="hourList">
+
+								</ul>
+								<ul class="dailyList">
+
+								</ul>
+								<canvas class="canvas hourlyCanvas" id="hourlyCanvas"
+									width="1200" height="100"></canvas>
+								<canvas class="canvas dailyCanvas" id="dailyCanvas" 
+									width="450" height="100"></canvas>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/text.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</html>
